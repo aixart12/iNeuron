@@ -26,7 +26,6 @@ export class DatabaseModule {
               username: configService.get('DATABASE_USERNAME'),
               password: configService.get('DATABASE_PASSWORD'),
               database: configService.get('DATABASE_NAME'),
-            //   dialectModule: pg,
               models: models,
               logging: console.log,
             };
