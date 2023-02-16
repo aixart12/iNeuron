@@ -1,11 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { Model, Repository, Sequelize } from 'sequelize-typescript';
-import { User } from 'src/interface/userInterface';
-import { UserSchema } from 'src/models/user.model';
+import { UserSchema } from '../models/user.model';
 
-    
 @Injectable()
-export class UserModelService  {
+export class UserModelService {
   repository: Repository<UserSchema>;
 
   constructor(public readonly sequelize: Sequelize) {
